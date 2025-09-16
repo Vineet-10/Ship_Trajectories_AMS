@@ -331,7 +331,7 @@ def main():
             click_lon = map_data["last_clicked"]["lng"]
 
             if not is_within_bounds(click_lat, click_lon, location_style):
-                st.warning("Please click inside the blue boundary area")
+                st.warning("Please click inside the boundary area")
             else:
                 if not st.session_state.click_coords['start']:
                     st.session_state.click_coords['start'] = [click_lat, click_lon]
